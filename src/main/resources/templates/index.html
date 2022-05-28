@@ -1,10 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-br" xmlns:th="https://www.thymeleaf.org">
-<head>
+<head th:replace="~{fragments :: head}">
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+
 <body>
+<header th:replace="~{fragments :: header}"></header>
+
+<main>
+    <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="/img/hero.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Lorem ipsum dolor sit amet</h1>
+        <p class="lead">Phasellus ullamcorper fringilla tortor eu porttitor. Pellentesque tristique fringilla nibh, non porttitor orci laoreet in. Proin nunc erat, volutpat vel iaculis vitae, congue et neque. Quisque auctor pharetra dictum. Suspendisse vel cursus mi, in malesuada augue. Nunc dapibus eget augue ut pharetra. Maecenas feugiat suscipit laoreet.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <button type="button" class="btn btn-custom btn-lg px-4 me-md-2">Comprar</button>
+          <button type="button" class="btn btn-outline-custom btn-lg px-4">Cadastrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
 
 </body>
+
+<footer th:replace="~{fragments :: footer}"></footer>
 </html>
