@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="https://www.thymeleaf.org">
+<head th:replace="~{fragments :: head}">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+    <header th:replace="~{fragments :: header}"></header>
+    <main>
+      <div class="container container-form mb-3 mt-3">
+        <div class="py-5 text-center">
+          <h2>Cadastro de Cliente</h2>
+        </div>
+    
+        <form class="row g-3">
+          <div class="col-12">
+            <label for="inputName" class="form-label">Nome completo</label>
+            <input type="text" class="form-control" id="inputName" placeholder="" />
+          </div>
+    
+          <div class="col-md-6">
+            <label for="inputCPF" class="form-label">CPF</label>
+            <input type="number" class="form-control" id="inputCPF" placeholder="" />
+          </div>
+          <div class="col-md-6">
+            <label for="inputDate" class="form-label">Data de nascimento</label>
+            <input type="date" class="form-control" id="inputDate" placeholder="" />
+          </div>
+    
+          <div class="col-md-12">
+            <label for="inputEmail" class="form-label">E-Mail</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="" />
+          </div>
+    
+          <div class="col-md-10">
+            <label for="inputAddress" class="form-label">Endereço</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="" />
+          </div>
+          <div class="col-md-2">
+            <label for="inputNumero" class="form-label">Número</label>
+            <input type="number" class="form-control" id="inputNumero" placeholder="" />
+          </div>
+    
+          <div class="col-md-6">
+            <label for="inputBairro" class="form-label">Bairro</label>
+            <input type="text" class="form-control" id="inputBairro" placeholder="" />
+          </div>
+          <div class="col-md-6">
+            <label for="inputComplemento" class="form-label">Complemento</label>
+            <input type="text" class="form-control" id="inputComplemento" placeholder="" />
+          </div>
+    
+          <div class="col-md-6">
+            <label for="inputCidade" class="form-label">Cidade</label>
+            <select id="inputCidade" class="form-select">
+              <option selected>Selecione</option>
+              <option>Ribeirão Preto</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            <label for="inputEstado" class="form-label">UF</label>
+            <select id="inputEstado" class="form-select">
+              <option selected>Selecione</option>
+              <option>SP</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            <label for="inputCep" class="form-label">CEP</label>
+            <input type="number" class="form-control" id="inputCep" placeholder="" />
+          </div>
+    
+          <div class="col-md-6">
+            <label for="inputTelefone" class="form-label">Telefone</label>
+            <input type="tel" class="form-control" id="inputTelefone" placeholder="" />
+          </div>
+          <div class="col-md-6">
+            <label for="inputWhatsapp" class="form-label">Whatsapp</label>
+            <select id="inputWhatsapp" class="form-select">
+              <option selected>Selecione</option>
+              <option>Sim</option>
+              <option>Não</option>
+            </select>
+          </div>
+    
+          <div class="col-md-6">
+            <label for="inputPassword" class="form-label">Senha</label>
+            <input type="password" class="form-control" id="inputPassword" />
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword" class="form-label">Confirmar senha</label>
+            <input type="password" class="form-control" id="inputPassword" />
+          </div>
+    
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-3">
+            <button type="button" class="btn btn-primary px-4 me-md-2">Cadastrar</button>
+            <button type="button" class="btn btn-outline-secondary px-4 me-md-2">Cancelar</button>
+          </div>
+        </form>
+      </div>
+    </main>
+        
+</body>
+    
+<footer th:replace="~{fragments :: footer}"></footer>
+</html>

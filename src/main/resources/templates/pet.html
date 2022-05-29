@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="https://www.thymeleaf.org">
+<head th:replace="~{fragments :: head}">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+    <header th:replace="~{fragments :: header}"></header>
+    <main>
+        <div class="container container-form">
+          <div class="py-5 text-center">
+            <h2>Cadastro de Animal</h2>
+          </div>
+      
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="inputCPF" class="form-label">Código da Tag</label>
+              <input type="number" class="form-control" id="inputCPF" placeholder="" />
+            </div>
+            <div class="col-md-6">
+              <label for="inputDate" class="form-label">Data de nascimento</label>
+              <input type="date" class="form-control" id="inputDate" placeholder="" />
+            </div>
+      
+            <div class="col-12">
+              <label for="inputName" class="form-label">Nome completo</label>
+              <input type="text" class="form-control" id="inputName" placeholder="" />
+            </div>
+      
+            <div class="col-md-6">
+              <label for="inputEspecie" class="form-label">Espécie</label>
+              <input type="text" class="form-control" id="inputEspecie" placeholder="" />
+            </div>
+      
+            <div class="col-md-6">
+              <label for="inputRaca" class="form-label">Raça</label>
+              <input type="text" class="form-control" id="inputRaca" placeholder="" />
+            </div>
+      
+            <div class="col-md-6">
+              <label for="inputCor" class="form-label">Cor</label>
+              <input type="text" class="form-control" id="inputCor" placeholder="" />
+            </div>
+      
+            <div class="col-md-3">
+              <label for="inputGenero" class="form-label">Gênero</label>
+              <select id="inputGenero" class="form-select">
+                <option selected>Selecione</option>
+                <option>Macho</option>
+                <option>Fêmea</option>
+              </select>
+            </div>
+      
+            <div class="col-md-3">
+              <label for="inputCastrado" class="form-label">Castrado</label>
+              <select id="inputCastrado" class="form-select">
+                <option selected>Selecione</option>
+                <option>Sim</option>
+                <option>Não</option>
+              </select>
+            </div>
+      
+            <div class="col-md-12">
+              <label for="inputPassword" class="form-label">Foto</label>
+              <input type="file" class="form-control" id="inputPassword" />
+            </div>
+      
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-3">
+              <button type="button" class="btn btn-primary px-4 me-md-2">Cadastrar</button>
+              <button type="button" class="btn btn-outline-secondary px-4 me-md-2">Cancelar</button>
+            </div>
+          </form>
+        </div>
+      </main>
+      
+    
+</body>
+    
+<footer th:replace="~{fragments :: footer}"></footer>
+</html>
