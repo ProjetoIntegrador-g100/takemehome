@@ -1,0 +1,36 @@
+body {
+    min-height: 75rem;
+    padding-top: 4.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.nav-item {
+    margin: 0 1.25rem;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.bg-custom {
+    background-color: #982EA6;
+}
+
+.btn-custom {
+	color: #FFFFFF;
+    background-color: #982EA6;
+}
+
+.btn-outline-custom {
+}
+
+.container-form {
+    max-width: 600px;
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
